@@ -6,7 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-	<script type="module" src="main.js">
+	<script>
+		class food{
+            constructor(){
+              this.nonveg="chicken";
+			  this.veg="sambar";
+            }
+		getData(){
+           console.log("food is:", this.nonveg);
+           console.log("food is:", this.veg);
+        }
+        }
+        const foods = new food();
+        console.log(foods.getData());
 	</script>
 </body>
 </html>	
